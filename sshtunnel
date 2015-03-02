@@ -1,0 +1,9 @@
+# Configuration file for the sshtunnel service.
+
+# The defaults shown below are automatically used, to change
+# the default values uncomment the appropriate line.
+
+# local_port=6000
+# destination_user=root
+# destination_host=remotehost
+# destination_port=22

@@ -1,0 +1,12 @@
+[Unit]
+Description= SSH tunnel for HTTP(s) traffic
+
+[Service]
+Environment='local_port=6000' 'destination_user=root' 'destination_host=remotesystem' 'destination_port=22'
+EnvironmentFile=/etc/sysconfig/sshtunnel
+ExecStart=/usr/bin/ssh -D ${local_port} ${destination_user}@${destination_host} -N -p ${destination_port}
+Restart=on-failure
+RestartSec=42s
+
+[Install]
+WantedBy=multi-user.target
