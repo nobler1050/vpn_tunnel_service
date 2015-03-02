@@ -7,3 +7,6 @@
 # destination_user=root
 # destination_host=remotehost
 # destination_port=22
+ destination_user=rnoble
+ destination_host=work
+ destination_port=3389
